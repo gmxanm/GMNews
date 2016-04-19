@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		A10C461E1C9FDA0000D7C280 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C461D1C9FDA0000D7C280 /* main.m */; };
 		A10C46211C9FDA0000D7C280 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C46201C9FDA0000D7C280 /* AppDelegate.m */; };
-		A10C46241C9FDA0000D7C280 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C46231C9FDA0000D7C280 /* ViewController.m */; };
 		A10C46271C9FDA0000D7C280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10C46251C9FDA0000D7C280 /* Main.storyboard */; };
 		A10C46291C9FDA0000D7C280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10C46281C9FDA0000D7C280 /* Assets.xcassets */; };
 		A10C462C1C9FDA0000D7C280 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10C462A1C9FDA0000D7C280 /* LaunchScreen.storyboard */; };
 		A10C46371C9FDA0000D7C280 /* GMNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C46361C9FDA0000D7C280 /* GMNewsTests.m */; };
 		A10C46421C9FDA0000D7C280 /* GMNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C46411C9FDA0000D7C280 /* GMNewsUITests.m */; };
+		A10C465B1C9FFBA400D7C280 /* AppBaseInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = A10C465A1C9FFBA400D7C280 /* AppBaseInfo.plist */; };
+		A10C46631C9FFFA400D7C280 /* GMNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C46621C9FFFA400D7C280 /* GMNetworkManager.m */; };
+		A10C466D1CA000B200D7C280 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C466C1CA000B200D7C280 /* UIColor+HexString.m */; };
+		A11220FB1CA0E70A007F5440 /* GMAppStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = A11220FA1CA0E70A007F5440 /* GMAppStatus.m */; };
+		A11221061CA11192007F5440 /* GMNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A11221031CA11192007F5440 /* GMNavigationVC.m */; };
+		A11221071CA11192007F5440 /* GMTabBarBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A11221051CA11192007F5440 /* GMTabBarBaseVC.m */; };
+		A112210F1CA112CA007F5440 /* GMTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A112210E1CA112CA007F5440 /* GMTitleLabel.m */; };
+		A11221111CA12684007F5440 /* NewsURLs.plist in Resources */ = {isa = PBXBuildFile; fileRef = A11221101CA12684007F5440 /* NewsURLs.plist */; };
+		A112211B1CA27F15007F5440 /* UILabel+StringFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = A112211A1CA27F15007F5440 /* UILabel+StringFrame.m */; };
+		A1481B9D1CA99122007F9709 /* GMNewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1481B9C1CA99122007F9709 /* GMNewsVC.m */; };
+		A1481BA01CA99139007F9709 /* GMMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1481B9F1CA99139007F9709 /* GMMainVC.m */; };
+		A1481BA21CA9A794007F9709 /* GMNews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1481BA11CA9A794007F9709 /* GMNews.storyboard */; };
+		EC7CCA51C996DCD6F6706A58 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD74A0A8C7EBD9B976399F0F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12F23C142D02296C042A0ADB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		753F62B034B8D9DB8EEAE850 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A10C46191C9FDA0000D7C280 /* GMNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10C461D1C9FDA0000D7C280 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A10C461F1C9FDA0000D7C280 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A10C46201C9FDA0000D7C280 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A10C46221C9FDA0000D7C280 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A10C46231C9FDA0000D7C280 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A10C46261C9FDA0000D7C280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A10C46281C9FDA0000D7C280 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A10C462B1C9FDA0000D7C280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +63,30 @@
 		A10C463D1C9FDA0000D7C280 /* GMNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10C46411C9FDA0000D7C280 /* GMNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMNewsUITests.m; sourceTree = "<group>"; };
 		A10C46431C9FDA0000D7C280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10C465A1C9FFBA400D7C280 /* AppBaseInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppBaseInfo.plist; sourceTree = "<group>"; };
+		A10C46611C9FFFA400D7C280 /* GMNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMNetworkManager.h; sourceTree = "<group>"; };
+		A10C46621C9FFFA400D7C280 /* GMNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMNetworkManager.m; sourceTree = "<group>"; };
+		A10C466B1CA000B200D7C280 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		A10C466C1CA000B200D7C280 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		A11220F91CA0E70A007F5440 /* GMAppStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMAppStatus.h; sourceTree = "<group>"; };
+		A11220FA1CA0E70A007F5440 /* GMAppStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMAppStatus.m; sourceTree = "<group>"; };
+		A11221021CA11192007F5440 /* GMNavigationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMNavigationVC.h; sourceTree = "<group>"; };
+		A11221031CA11192007F5440 /* GMNavigationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMNavigationVC.m; sourceTree = "<group>"; };
+		A11221041CA11192007F5440 /* GMTabBarBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMTabBarBaseVC.h; sourceTree = "<group>"; };
+		A11221051CA11192007F5440 /* GMTabBarBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMTabBarBaseVC.m; sourceTree = "<group>"; };
+		A112210D1CA112CA007F5440 /* GMTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMTitleLabel.h; sourceTree = "<group>"; };
+		A112210E1CA112CA007F5440 /* GMTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMTitleLabel.m; sourceTree = "<group>"; };
+		A11221101CA12684007F5440 /* NewsURLs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NewsURLs.plist; sourceTree = "<group>"; };
+		A11221121CA26894007F5440 /* GMNews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GMNews-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		A11221191CA27F15007F5440 /* UILabel+StringFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+StringFrame.h"; sourceTree = "<group>"; };
+		A112211A1CA27F15007F5440 /* UILabel+StringFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+StringFrame.m"; sourceTree = "<group>"; };
+		A1481B9B1CA99122007F9709 /* GMNewsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMNewsVC.h; path = ../Main/GMNewsVC.h; sourceTree = "<group>"; };
+		A1481B9C1CA99122007F9709 /* GMNewsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMNewsVC.m; path = ../Main/GMNewsVC.m; sourceTree = "<group>"; };
+		A1481B9E1CA99139007F9709 /* GMMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMMainVC.h; sourceTree = "<group>"; };
+		A1481B9F1CA99139007F9709 /* GMMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMMainVC.m; sourceTree = "<group>"; };
+		A1481BA11CA9A794007F9709 /* GMNews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GMNews.storyboard; sourceTree = "<group>"; };
+		A189F3901CABCE0A00479476 /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libReveal.dylib; path = ../libReveal.dylib; sourceTree = "<group>"; };
+		FD74A0A8C7EBD9B976399F0F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7CCA51C996DCD6F6706A58 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +122,8 @@
 				A10C46351C9FDA0000D7C280 /* GMNewsTests */,
 				A10C46401C9FDA0000D7C280 /* GMNewsUITests */,
 				A10C461A1C9FDA0000D7C280 /* Products */,
+				AA6ACC9BF0084F7086E1E059 /* Pods */,
+				D0F47DD3BDCED28F15D2AADF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +140,19 @@
 		A10C461B1C9FDA0000D7C280 /* GMNews */ = {
 			isa = PBXGroup;
 			children = (
+				A11221121CA26894007F5440 /* GMNews-Prefix.pch */,
 				A10C461F1C9FDA0000D7C280 /* AppDelegate.h */,
 				A10C46201C9FDA0000D7C280 /* AppDelegate.m */,
-				A10C46221C9FDA0000D7C280 /* ViewController.h */,
-				A10C46231C9FDA0000D7C280 /* ViewController.m */,
+				A11221011CA11192007F5440 /* Main */,
+				A11220FC1CA0EE8F007F5440 /* News */,
+				A10C46601C9FFFA400D7C280 /* Manager */,
+				A11220F81CA0E6D0007F5440 /* Tool */,
+				A10C466A1CA0008400D7C280 /* Category */,
 				A10C46251C9FDA0000D7C280 /* Main.storyboard */,
 				A10C46281C9FDA0000D7C280 /* Assets.xcassets */,
 				A10C462A1C9FDA0000D7C280 /* LaunchScreen.storyboard */,
+				A10C465A1C9FFBA400D7C280 /* AppBaseInfo.plist */,
+				A11221101CA12684007F5440 /* NewsURLs.plist */,
 				A10C462D1C9FDA0000D7C280 /* Info.plist */,
 				A10C461C1C9FDA0000D7C280 /* Supporting Files */,
 			);
@@ -140,6 +185,94 @@
 			path = GMNewsUITests;
 			sourceTree = "<group>";
 		};
+		A10C46601C9FFFA400D7C280 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A10C46611C9FFFA400D7C280 /* GMNetworkManager.h */,
+				A10C46621C9FFFA400D7C280 /* GMNetworkManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A10C466A1CA0008400D7C280 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A10C466B1CA000B200D7C280 /* UIColor+HexString.h */,
+				A10C466C1CA000B200D7C280 /* UIColor+HexString.m */,
+				A11221191CA27F15007F5440 /* UILabel+StringFrame.h */,
+				A112211A1CA27F15007F5440 /* UILabel+StringFrame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A11220F81CA0E6D0007F5440 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A11220F91CA0E70A007F5440 /* GMAppStatus.h */,
+				A11220FA1CA0E70A007F5440 /* GMAppStatus.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		A11220FC1CA0EE8F007F5440 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A1481B9B1CA99122007F9709 /* GMNewsVC.h */,
+				A1481B9C1CA99122007F9709 /* GMNewsVC.m */,
+				A1481BA11CA9A794007F9709 /* GMNews.storyboard */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		A11221011CA11192007F5440 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A11221081CA111AA007F5440 /* Controller */,
+				A11221091CA111C5007F5440 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A11221081CA111AA007F5440 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A11221021CA11192007F5440 /* GMNavigationVC.h */,
+				A11221031CA11192007F5440 /* GMNavigationVC.m */,
+				A11221041CA11192007F5440 /* GMTabBarBaseVC.h */,
+				A11221051CA11192007F5440 /* GMTabBarBaseVC.m */,
+				A1481B9E1CA99139007F9709 /* GMMainVC.h */,
+				A1481B9F1CA99139007F9709 /* GMMainVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A11221091CA111C5007F5440 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A112210D1CA112CA007F5440 /* GMTitleLabel.h */,
+				A112210E1CA112CA007F5440 /* GMTitleLabel.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AA6ACC9BF0084F7086E1E059 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12F23C142D02296C042A0ADB /* Pods.debug.xcconfig */,
+				753F62B034B8D9DB8EEAE850 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0F47DD3BDCED28F15D2AADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A189F3901CABCE0A00479476 /* libReveal.dylib */,
+				FD74A0A8C7EBD9B976399F0F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +280,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A10C46461C9FDA0000D7C280 /* Build configuration list for PBXNativeTarget "GMNews" */;
 			buildPhases = (
+				6E5C4E9ACD4E3240B463EEB1 /* Check Pods Manifest.lock */,
 				A10C46151C9FDA0000D7C280 /* Sources */,
 				A10C46161C9FDA0000D7C280 /* Frameworks */,
 				A10C46171C9FDA0000D7C280 /* Resources */,
+				2B6CF71F14881FFD725389D0 /* Embed Pods Frameworks */,
+				DCA616B384F501D1CBF6745F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +343,7 @@
 				TargetAttributes = {
 					A10C46181C9FDA0000D7C280 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = FV826VY62F;
 					};
 					A10C46311C9FDA0000D7C280 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -244,8 +381,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10C462C1C9FDA0000D7C280 /* LaunchScreen.storyboard in Resources */,
+				A1481BA21CA9A794007F9709 /* GMNews.storyboard in Resources */,
 				A10C46291C9FDA0000D7C280 /* Assets.xcassets in Resources */,
+				A11221111CA12684007F5440 /* NewsURLs.plist in Resources */,
 				A10C46271C9FDA0000D7C280 /* Main.storyboard in Resources */,
+				A10C465B1C9FFBA400D7C280 /* AppBaseInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +405,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B6CF71F14881FFD725389D0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E5C4E9ACD4E3240B463EEB1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCA616B384F501D1CBF6745F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A10C46151C9FDA0000D7C280 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A10C46241C9FDA0000D7C280 /* ViewController.m in Sources */,
+				A11221061CA11192007F5440 /* GMNavigationVC.m in Sources */,
+				A112210F1CA112CA007F5440 /* GMTitleLabel.m in Sources */,
+				A11220FB1CA0E70A007F5440 /* GMAppStatus.m in Sources */,
 				A10C46211C9FDA0000D7C280 /* AppDelegate.m in Sources */,
+				A10C46631C9FFFA400D7C280 /* GMNetworkManager.m in Sources */,
+				A1481B9D1CA99122007F9709 /* GMNewsVC.m in Sources */,
+				A112211B1CA27F15007F5440 /* UILabel+StringFrame.m in Sources */,
+				A10C466D1CA000B200D7C280 /* UIColor+HexString.m in Sources */,
 				A10C461E1C9FDA0000D7C280 /* main.m in Sources */,
+				A11221071CA11192007F5440 /* GMTabBarBaseVC.m in Sources */,
+				A1481BA01CA99139007F9709 /* GMMainVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,23 +607,77 @@
 		};
 		A10C46471C9FDA0000D7C280 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12F23C142D02296C042A0ADB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GMNews-Prefix.pch";
 				INFOPLIST_FILE = GMNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Gmxanm.GMNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		A10C46481C9FDA0000D7C280 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753F62B034B8D9DB8EEAE850 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GMNews-Prefix.pch";
 				INFOPLIST_FILE = GMNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Gmxanm.GMNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +748,7 @@
 				A10C46481C9FDA0000D7C280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A10C46491C9FDA0000D7C280 /* Build configuration list for PBXNativeTarget "GMNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +757,7 @@
 				A10C464B1C9FDA0000D7C280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A10C464C1C9FDA0000D7C280 /* Build configuration list for PBXNativeTarget "GMNewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +766,7 @@
 				A10C464E1C9FDA0000D7C280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

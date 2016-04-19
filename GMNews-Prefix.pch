@@ -1,0 +1,32 @@
+//
+//  GMNews-Prefix.pch
+//  GMNews
+//
+//  Created by Gmxanm on 16/3/23.
+//  Copyright © 2016年 Xnmawc. All rights reserved.
+//
+
+#ifndef GMNews_Prefix_pch
+#define GMNews_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+/* AppStatus */
+
+#define AppStatus [GMAppStatus shareInstance]
+
+/* Block 宏使用 */
+
+#define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
+#define StrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
+
+/* Screen Size */
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+
+
+#endif /* GMNews_Prefix_pch */

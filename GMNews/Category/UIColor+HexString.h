@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIColor+HexString.h
 //  GMNews
 //
 //  Created by Gmxanm on 16/3/21.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UIColor (HexString)
 
++ (UIColor *)colorWithHexString:(NSString *)string;
 
 @end
-
