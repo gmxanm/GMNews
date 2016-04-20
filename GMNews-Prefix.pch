@@ -6,6 +6,10 @@
 //  Copyright © 2016年 Xnmawc. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+#import <sys/time.h>
+#import <pthread.h>
+
 #ifndef GMNews_Prefix_pch
 #define GMNews_Prefix_pch
 
@@ -16,7 +20,7 @@
 
 #define AppStatus [GMAppStatus shareInstance]
 
-/* Block 宏使用 */
+/* Safe Block */
 
 #define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
 #define StrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
@@ -26,7 +30,15 @@
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
+/* Safe Main Thread */
 
+static inline void dispatch_async_on_main_queue(void (^block)()) {
+    if (pthread_main_np()) {
+        block();
+    } else {
+        dispatch_async(dispatch_get_main_queue(), block);
+    }
+}
 
 
 #endif /* GMNews_Prefix_pch */
