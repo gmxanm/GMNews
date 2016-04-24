@@ -7,7 +7,6 @@
 //
 
 #import "GMNavigationVC.h"
-#import "GMAppStatus.h"
 
 @interface GMNavigationVC ()
 

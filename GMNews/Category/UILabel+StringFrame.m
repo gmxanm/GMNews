@@ -12,8 +12,7 @@
 
 // TODO 正确的Size 需要调整
 
-- (CGSize)boundingRectWithSize:(CGSize)size
-{
+- (CGSize)boundingRectWithSize:(CGSize)size {
     NSDictionary *attribute = @{NSFontAttributeName: self.font};
     CGSize retSize = [self.text boundingRectWithSize:size
                                              options:\

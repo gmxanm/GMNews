@@ -10,4 +10,6 @@
 
 @interface GMNewsVC : UIViewController
 
+@property (copy, nonatomic) NSString *urlStr;
+
 @end

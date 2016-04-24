@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AppBaseUrl</key>
+	<string>http://c.m.163.com/</string>
 	<key>AppBaseColor</key>
 	<string>#C42D31</string>
 </dict>

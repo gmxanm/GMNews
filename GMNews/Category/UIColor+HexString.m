@@ -10,8 +10,7 @@
 
 @implementation UIColor (HexString)
 
-+ (UIColor *)colorWithHexString:(NSString *)string
-{
++ (UIColor *)colorWithHexString:(NSString *)string {
     NSString *cString = [[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     
     // String should be 6 or 8 characters

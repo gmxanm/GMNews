@@ -13,11 +13,17 @@
 
 + (instancetype)shareInstance;
 
-@property (strong ,nonatomic ,readonly) UIColor *appBaseColor;
-
-@property (strong ,nonatomic ,readonly) NSDictionary *appInfoDic;
-
+/**
+ *  数据源数组
+ */
 @property (strong ,nonatomic ,readonly) NSArray *newsInfoArray;
-
+/**
+ *  URL
+ */
+@property (copy , nonatomic, readonly) NSString *baseUrl;
+/**
+ *  主色
+ */
+@property (strong ,nonatomic ,readonly) UIColor *appBaseColor;
 
 @end

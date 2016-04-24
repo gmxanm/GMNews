@@ -26,6 +26,8 @@
 		A1481B9D1CA99122007F9709 /* GMNewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1481B9C1CA99122007F9709 /* GMNewsVC.m */; };
 		A1481BA01CA99139007F9709 /* GMMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1481B9F1CA99139007F9709 /* GMMainVC.m */; };
 		A1481BA21CA9A794007F9709 /* GMNews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1481BA11CA9A794007F9709 /* GMNews.storyboard */; };
+		A175F1531CC8B0EF00A431A2 /* GMNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A175F1521CC8B0EF00A431A2 /* GMNewsCell.m */; };
+		A175F1581CC9F52900A431A2 /* GMNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A175F1571CC9F52900A431A2 /* GMNewsEntity.m */; };
 		EC7CCA51C996DCD6F6706A58 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD74A0A8C7EBD9B976399F0F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,10 @@
 		A1481B9E1CA99139007F9709 /* GMMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMMainVC.h; sourceTree = "<group>"; };
 		A1481B9F1CA99139007F9709 /* GMMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMMainVC.m; sourceTree = "<group>"; };
 		A1481BA11CA9A794007F9709 /* GMNews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GMNews.storyboard; sourceTree = "<group>"; };
+		A175F1511CC8B0EF00A431A2 /* GMNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMNewsCell.h; sourceTree = "<group>"; };
+		A175F1521CC8B0EF00A431A2 /* GMNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMNewsCell.m; sourceTree = "<group>"; };
+		A175F1561CC9F52900A431A2 /* GMNewsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMNewsEntity.h; sourceTree = "<group>"; };
+		A175F1571CC9F52900A431A2 /* GMNewsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMNewsEntity.m; sourceTree = "<group>"; };
 		A189F3901CABCE0A00479476 /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libReveal.dylib; path = ../libReveal.dylib; sourceTree = "<group>"; };
 		FD74A0A8C7EBD9B976399F0F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -217,9 +223,9 @@
 		A11220FC1CA0EE8F007F5440 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				A1481B9B1CA99122007F9709 /* GMNewsVC.h */,
-				A1481B9C1CA99122007F9709 /* GMNewsVC.m */,
-				A1481BA11CA9A794007F9709 /* GMNews.storyboard */,
+				A175F1551CC9F4A600A431A2 /* Model */,
+				A175F14C1CC8A80B00A431A2 /* View */,
+				A175F14D1CC8A81400A431A2 /* Controller */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -253,6 +259,34 @@
 				A112210E1CA112CA007F5440 /* GMTitleLabel.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		A175F14C1CC8A80B00A431A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A175F1511CC8B0EF00A431A2 /* GMNewsCell.h */,
+				A175F1521CC8B0EF00A431A2 /* GMNewsCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A175F14D1CC8A81400A431A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A1481B9B1CA99122007F9709 /* GMNewsVC.h */,
+				A1481B9C1CA99122007F9709 /* GMNewsVC.m */,
+				A1481BA11CA9A794007F9709 /* GMNews.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A175F1551CC9F4A600A431A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A175F1561CC9F52900A431A2 /* GMNewsEntity.h */,
+				A175F1571CC9F52900A431A2 /* GMNewsEntity.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		AA6ACC9BF0084F7086E1E059 /* Pods */ = {
@@ -466,9 +500,11 @@
 				A1481B9D1CA99122007F9709 /* GMNewsVC.m in Sources */,
 				A112211B1CA27F15007F5440 /* UILabel+StringFrame.m in Sources */,
 				A10C466D1CA000B200D7C280 /* UIColor+HexString.m in Sources */,
+				A175F1531CC8B0EF00A431A2 /* GMNewsCell.m in Sources */,
 				A10C461E1C9FDA0000D7C280 /* main.m in Sources */,
 				A11221071CA11192007F5440 /* GMTabBarBaseVC.m in Sources */,
 				A1481BA01CA99139007F9709 /* GMMainVC.m in Sources */,
+				A175F1581CC9F52900A431A2 /* GMNewsEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +676,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Gmxanm.GMNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -678,6 +715,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Gmxanm.GMNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

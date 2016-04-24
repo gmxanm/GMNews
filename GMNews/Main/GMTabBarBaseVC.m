@@ -7,7 +7,6 @@
 //
 
 #import "GMTabBarBaseVC.h"
-#import "GMAppStatus.h"
 
 @interface GMTabBarBaseVC ()
 

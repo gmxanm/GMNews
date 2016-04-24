@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Xnmawc. All rights reserved.
 //
 
+#import "GMAppStatus.h"
 #import <UIKit/UIKit.h>
 #import <sys/time.h>
 #import <pthread.h>
@@ -17,21 +18,20 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 /* AppStatus */
-
 #define AppStatus [GMAppStatus shareInstance]
 
 /* Safe Block */
-
 #define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
 #define StrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
 
-/* Screen Size */
+/* Safe Callback*/
+#define SAFE_ExcuteWebServiceCallback(callback, argument) if (callback) {callback(argument);}
 
+/* Screen Size */
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
 /* Safe Main Thread */
-
 static inline void dispatch_async_on_main_queue(void (^block)()) {
     if (pthread_main_np()) {
         block();

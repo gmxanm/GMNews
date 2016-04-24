@@ -9,7 +9,19 @@
 #import <AFNetworking/AFNetworking.h>
 
 @interface GMNetworkManager : AFHTTPSessionManager
+/**
+ *  NewsArray
+ */
+@property (strong, nonatomic) NSArray *newsArray;
 
-+ (instancetype)shareInstance;
++ (instancetype)shareInstanceWithBaseUrl:(NSString *)url;
+
++ (instancetype)shareInstanceWithoutBaseUrl;
+
+/**
+ * Get news array;
+ */
+
+//- (void)newsArrayWithUrl:(NSString *)url;
 
 @end
