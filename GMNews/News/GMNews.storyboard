@@ -59,11 +59,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
-                                                            <color key="value" red="0.54117647059999996" green="0.074509803920000006" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -86,6 +81,7 @@
                                             <outlet property="replyCountLabel" destination="cFV-22-kMx" id="vHu-2h-uQO"/>
                                             <outlet property="subtitleLabel" destination="RO5-dh-h3W" id="7i3-sL-kRy"/>
                                             <outlet property="titleLabel" destination="h49-3t-IG5" id="XWf-Nb-1ma"/>
+                                            <segue destination="FV2-Mu-kr2" kind="show" id="VMr-pr-f6V"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ImagesCell" rowHeight="130" id="e5z-9Z-2W7" userLabel="Image Cell" customClass="GMNewsCell">
@@ -273,7 +269,173 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wov-aZ-UqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71.5" y="-418.5"/>
+            <point key="canvasLocation" x="-357.5" y="-422.5"/>
+        </scene>
+        <!--News DetailVC-->
+        <scene sceneID="ftz-DE-8Gv">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" hidesBottomBarWhenPushed="YES" id="FV2-Mu-kr2" customClass="GMNewsDetailVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0m1-Zc-5eB"/>
+                        <viewControllerLayoutGuide type="bottom" id="eJW-1U-OZ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wuM-NT-CIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vf6-0E-Jzt">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dav-sX-uNB" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BxT-ja-MOo">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2E-ZR-5qP">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="PCB-gq-ETC">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlG-mW-411">
+                                            <rect key="frame" x="329" y="7" width="46" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="46" id="His-n7-5K0"/>
+                                            </constraints>
+                                            <state key="normal" title="设置"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71w-7Q-a3H">
+                                            <rect key="frame" x="6" y="7" width="223" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="223" id="3oI-G8-K3p"/>
+                                                <constraint firstAttribute="height" constant="30" id="txU-bP-sZM"/>
+                                            </constraints>
+                                            <state key="normal" title="写跟帖"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ji-GH-5XT">
+                                            <rect key="frame" x="283" y="7" width="46" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="s15-At-cl6"/>
+                                                <constraint firstAttribute="width" constant="46" id="zja-6G-6eq"/>
+                                            </constraints>
+                                            <state key="normal" title="分享"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePY-eV-Kgo">
+                                            <rect key="frame" x="235" y="7" width="48" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="S4u-8e-T5J"/>
+                                                <constraint firstAttribute="height" constant="30" id="XD7-dh-1p7"/>
+                                            </constraints>
+                                            <state key="normal" title="跟帖"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="hlG-mW-411" secondAttribute="trailing" id="Alm-XB-GzX"/>
+                                        <constraint firstItem="hlG-mW-411" firstAttribute="centerY" secondItem="BxT-ja-MOo" secondAttribute="centerY" id="LG9-bt-Tdd"/>
+                                        <constraint firstItem="71w-7Q-a3H" firstAttribute="centerY" secondItem="BxT-ja-MOo" secondAttribute="centerY" id="Q21-w2-pIr"/>
+                                        <constraint firstItem="hlG-mW-411" firstAttribute="leading" secondItem="7ji-GH-5XT" secondAttribute="trailing" id="SxQ-jH-yMI"/>
+                                        <constraint firstItem="71w-7Q-a3H" firstAttribute="leading" secondItem="BxT-ja-MOo" secondAttribute="leading" constant="6" id="cxf-gb-Spf"/>
+                                        <constraint firstItem="7ji-GH-5XT" firstAttribute="leading" secondItem="ePY-eV-Kgo" secondAttribute="trailing" id="kef-Bb-Bnk"/>
+                                        <constraint firstItem="7ji-GH-5XT" firstAttribute="centerY" secondItem="BxT-ja-MOo" secondAttribute="centerY" id="lh3-yp-lci"/>
+                                        <constraint firstItem="ePY-eV-Kgo" firstAttribute="leading" secondItem="71w-7Q-a3H" secondAttribute="trailing" constant="6" id="qlw-4e-BVj"/>
+                                        <constraint firstItem="ePY-eV-Kgo" firstAttribute="centerY" secondItem="BxT-ja-MOo" secondAttribute="centerY" id="tUM-Vc-mfb"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="f36-Mn-Koa"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SNk-o8-aTA" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vkg-7l-fdF">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2y-uH-3Fu" userLabel="Line">
+                                            <rect key="frame" x="0.0" y="63.5" width="375" height="0.5"/>
+                                            <color key="backgroundColor" red="0.70588235294117641" green="0.70588235294117641" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="0.5" id="cHN-Mz-L22"/>
+                                            </constraints>
+                                        </view>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rje-ga-wkq">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="Pds-Yn-qEg">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGn-vD-Py6">
+                                            <rect key="frame" x="9" y="28" width="46" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="46" id="UlQ-xY-72Q"/>
+                                                <constraint firstAttribute="height" constant="30" id="cU7-v7-YHK"/>
+                                            </constraints>
+                                            <state key="normal" title="返回"/>
+                                            <connections>
+                                                <action selector="popToNewsVC:" destination="FV2-Mu-kr2" eventType="touchUpInside" id="zay-Cb-vO9"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1e-Co-ekG">
+                                            <rect key="frame" x="321" y="28" width="46" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="46" id="ePK-RD-AfT"/>
+                                                <constraint firstAttribute="height" constant="30" id="voQ-sG-ONu"/>
+                                            </constraints>
+                                            <state key="normal" title="跟帖"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="M1e-Co-ekG" secondAttribute="trailing" constant="8" id="MmZ-vu-P6p"/>
+                                        <constraint firstAttribute="bottom" secondItem="y2y-uH-3Fu" secondAttribute="bottom" id="SHd-aG-Nrt"/>
+                                        <constraint firstAttribute="bottom" secondItem="JGn-vD-Py6" secondAttribute="bottom" constant="6" id="TJm-bV-HlB"/>
+                                        <constraint firstItem="y2y-uH-3Fu" firstAttribute="leading" secondItem="vkg-7l-fdF" secondAttribute="leading" id="UXa-gA-8ry"/>
+                                        <constraint firstItem="JGn-vD-Py6" firstAttribute="centerY" secondItem="vkg-7l-fdF" secondAttribute="centerY" id="X3a-b7-cwd"/>
+                                        <constraint firstAttribute="trailing" secondItem="y2y-uH-3Fu" secondAttribute="trailing" id="Yox-J9-jUs"/>
+                                        <constraint firstItem="JGn-vD-Py6" firstAttribute="leading" secondItem="vkg-7l-fdF" secondAttribute="leading" constant="9" id="meJ-tJ-qAJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="M1e-Co-ekG" secondAttribute="bottom" constant="6" id="sBV-rL-RoB"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="X3a-b7-cwd"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="fUW-MY-Lzq"/>
+                                </constraints>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SNk-o8-aTA" firstAttribute="top" secondItem="wuM-NT-CIZ" secondAttribute="top" id="5k9-9A-QzU"/>
+                            <constraint firstAttribute="trailing" secondItem="vf6-0E-Jzt" secondAttribute="trailing" id="Eg0-4W-DgF"/>
+                            <constraint firstAttribute="trailing" secondItem="Dav-sX-uNB" secondAttribute="trailing" id="JOj-OD-gxI"/>
+                            <constraint firstAttribute="trailing" secondItem="SNk-o8-aTA" secondAttribute="trailing" id="OJp-MN-fsT"/>
+                            <constraint firstItem="eJW-1U-OZ6" firstAttribute="top" secondItem="vf6-0E-Jzt" secondAttribute="bottom" id="fvL-I7-zWM"/>
+                            <constraint firstItem="vf6-0E-Jzt" firstAttribute="leading" secondItem="wuM-NT-CIZ" secondAttribute="leading" id="hd5-go-q5s"/>
+                            <constraint firstItem="eJW-1U-OZ6" firstAttribute="top" secondItem="Dav-sX-uNB" secondAttribute="bottom" id="juh-q8-S2z"/>
+                            <constraint firstItem="vf6-0E-Jzt" firstAttribute="top" secondItem="SNk-o8-aTA" secondAttribute="bottom" id="lsm-Od-kTX"/>
+                            <constraint firstItem="Dav-sX-uNB" firstAttribute="leading" secondItem="wuM-NT-CIZ" secondAttribute="leading" id="sUM-2F-YnP"/>
+                            <constraint firstItem="SNk-o8-aTA" firstAttribute="leading" secondItem="wuM-NT-CIZ" secondAttribute="leading" id="t9q-gu-taM"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yff-rM-iiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.5" y="-422.5"/>
         </scene>
     </scenes>
 </document>

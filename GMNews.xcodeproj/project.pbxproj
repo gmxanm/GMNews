@@ -28,6 +28,7 @@
 		A1481BA21CA9A794007F9709 /* GMNews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1481BA11CA9A794007F9709 /* GMNews.storyboard */; };
 		A175F1531CC8B0EF00A431A2 /* GMNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A175F1521CC8B0EF00A431A2 /* GMNewsCell.m */; };
 		A175F1581CC9F52900A431A2 /* GMNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A175F1571CC9F52900A431A2 /* GMNewsEntity.m */; };
+		A1A6325B1CCE44CF0027CEE9 /* GMNewsDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A6325A1CCE44CF0027CEE9 /* GMNewsDetailVC.m */; };
 		EC7CCA51C996DCD6F6706A58 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD74A0A8C7EBD9B976399F0F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,8 @@
 		A175F1561CC9F52900A431A2 /* GMNewsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMNewsEntity.h; sourceTree = "<group>"; };
 		A175F1571CC9F52900A431A2 /* GMNewsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMNewsEntity.m; sourceTree = "<group>"; };
 		A189F3901CABCE0A00479476 /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libReveal.dylib; path = ../libReveal.dylib; sourceTree = "<group>"; };
+		A1A632591CCE44CF0027CEE9 /* GMNewsDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMNewsDetailVC.h; sourceTree = "<group>"; };
+		A1A6325A1CCE44CF0027CEE9 /* GMNewsDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMNewsDetailVC.m; sourceTree = "<group>"; };
 		FD74A0A8C7EBD9B976399F0F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -150,6 +153,7 @@
 				A10C461F1C9FDA0000D7C280 /* AppDelegate.h */,
 				A10C46201C9FDA0000D7C280 /* AppDelegate.m */,
 				A11221011CA11192007F5440 /* Main */,
+				A1A632551CCE44310027CEE9 /* Detail */,
 				A11220FC1CA0EE8F007F5440 /* News */,
 				A10C46601C9FFFA400D7C280 /* Manager */,
 				A11220F81CA0E6D0007F5440 /* Tool */,
@@ -287,6 +291,39 @@
 				A175F1571CC9F52900A431A2 /* GMNewsEntity.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A1A632551CCE44310027CEE9 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A1A632561CCE44640027CEE9 /* Model */,
+				A1A632571CCE44770027CEE9 /* View */,
+				A1A632581CCE44850027CEE9 /* Controller */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		A1A632561CCE44640027CEE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A1A632571CCE44770027CEE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A1A632581CCE44850027CEE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A1A632591CCE44CF0027CEE9 /* GMNewsDetailVC.h */,
+				A1A6325A1CCE44CF0027CEE9 /* GMNewsDetailVC.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		AA6ACC9BF0084F7086E1E059 /* Pods */ = {
@@ -502,6 +539,7 @@
 				A10C466D1CA000B200D7C280 /* UIColor+HexString.m in Sources */,
 				A175F1531CC8B0EF00A431A2 /* GMNewsCell.m in Sources */,
 				A10C461E1C9FDA0000D7C280 /* main.m in Sources */,
+				A1A6325B1CCE44CF0027CEE9 /* GMNewsDetailVC.m in Sources */,
 				A11221071CA11192007F5440 /* GMTabBarBaseVC.m in Sources */,
 				A1481BA01CA99139007F9709 /* GMMainVC.m in Sources */,
 				A175F1581CC9F52900A431A2 /* GMNewsEntity.m in Sources */,
