@@ -1,1 +1,0 @@
-../../../MJRefresh_Bell/MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h
