@@ -34,6 +34,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UITableView+FDTemplateLayoutCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,12 +52,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2C71DE0FB8A6E5BB6EAF9FB037D799CC</key>
+		<key>0B99AA007353395E171FAFBD0B8443A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4219466550A5D227B23A130B17926657</key>
+		<key>14EBD35D45BC69A4284988DB5E86D6AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1D2C4320AF7FFEB9CF841538B3E890F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2C71DE0FB8A6E5BB6EAF9FB037D799CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C3C5706569D272FA8D1D74050438DB6B</key>
+		<key>D54AB3ECEB9A8FBA15D4F73CBE326692</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D54AB3ECEB9A8FBA15D4F73CBE326692</key>
+		<key>EA0793950FD0AF72FF83D3CED4D6D31E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

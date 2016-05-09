@@ -22,6 +22,14 @@ PODS:
     - Mantle/extobjc (= 2.0.7)
   - Mantle/extobjc (2.0.7)
   - MJRefresh_Bell (3.1.0.2)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - UITableView+FDTemplateLayoutCell (1.4)
   - YYKit (1.0.5):
     - YYKit/no-arc (= 1.0.5)
   - YYKit/no-arc (1.0.5)
@@ -32,6 +40,8 @@ DEPENDENCIES:
   - MagicalRecord (~> 2.3.2)
   - Mantle (~> 2.0)
   - MJRefresh_Bell (~> 3.1.0.1)
+  - ReactiveCocoa (= 2.5)
+  - UITableView+FDTemplateLayoutCell
   - YYKit (~> 1.0.5)
 
 SPEC CHECKSUMS:
@@ -40,6 +50,8 @@ SPEC CHECKSUMS:
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   MJRefresh_Bell: dbe19a9ed58ed868d8bef1a488ec79196b94929f
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
   YYKit: f2654fe525de2283648db957bddb37ddd8e06549
 
 COCOAPODS: 0.39.0
