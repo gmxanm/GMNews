@@ -11,6 +11,8 @@
 
 @interface GMNewsDetailVC ()
 
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
 - (IBAction)popToNewsVC:(id)sender;
 
 @end

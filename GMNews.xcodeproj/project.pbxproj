@@ -87,7 +87,7 @@
 		A1481B9C1CA99122007F9709 /* GMNewsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMNewsVC.m; path = ../Main/GMNewsVC.m; sourceTree = "<group>"; };
 		A1481B9E1CA99139007F9709 /* GMMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMMainVC.h; sourceTree = "<group>"; };
 		A1481B9F1CA99139007F9709 /* GMMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMMainVC.m; sourceTree = "<group>"; };
-		A1481BA11CA9A794007F9709 /* GMNews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GMNews.storyboard; sourceTree = "<group>"; };
+		A1481BA11CA9A794007F9709 /* GMNews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GMNews.storyboard; path = News/GMNews.storyboard; sourceTree = "<group>"; };
 		A175F1511CC8B0EF00A431A2 /* GMNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMNewsCell.h; sourceTree = "<group>"; };
 		A175F1521CC8B0EF00A431A2 /* GMNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMNewsCell.m; sourceTree = "<group>"; };
 		A175F1561CC9F52900A431A2 /* GMNewsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMNewsEntity.h; sourceTree = "<group>"; };
@@ -159,6 +159,7 @@
 				A11220F81CA0E6D0007F5440 /* Tool */,
 				A10C466A1CA0008400D7C280 /* Category */,
 				A10C46251C9FDA0000D7C280 /* Main.storyboard */,
+				A1481BA11CA9A794007F9709 /* GMNews.storyboard */,
 				A10C46281C9FDA0000D7C280 /* Assets.xcassets */,
 				A10C462A1C9FDA0000D7C280 /* LaunchScreen.storyboard */,
 				A10C465A1C9FFBA400D7C280 /* AppBaseInfo.plist */,
@@ -279,7 +280,6 @@
 			children = (
 				A1481B9B1CA99122007F9709 /* GMNewsVC.h */,
 				A1481B9C1CA99122007F9709 /* GMNewsVC.m */,
-				A1481BA11CA9A794007F9709 /* GMNews.storyboard */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
